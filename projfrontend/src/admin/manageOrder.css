@@ -1,0 +1,27 @@
+.heading{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1300px){
+    .heading{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .heading{
+        width: 100%;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .heading{
+        width: 100%;
+        font-size: 21px;
+        text-align: initial;
+    }
+}
+

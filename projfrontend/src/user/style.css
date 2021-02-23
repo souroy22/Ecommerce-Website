@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@500&display=swap');
+
+body{
+    font-family: 'Newsreader', serif;
+}
+
+.bgcolor{
+    background: rgb(207, 202, 202);
+    background-color: white;
+}
+
+.box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    /* background: #fff; */
+    margin: auto;
+    margin-top: 100px;
+    color: black;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+form{
+    margin-top: 50px;
+}
+
+.input-container{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+
+.input-container input{
+    height: 100%;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 19px;
+    background-color: transparent;
+}
+
+.input-container input:focus{
+    outline-style: none;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+    transform: translateY(-27px);
+    font-size: 19px;
+    color: #4158d0;
+    
+}
+
+.input-container label{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.input-container .underline{
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+    left: -180px;
+}
+
+.input-container .underline::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: 4158d0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.input-container input:focus ~ .underline::before,
+.input-container input:valid ~ .underline::before{
+    transform: scaleX(1);
+}
+
+button{
+    width: 300px;
+}
+
+.box .submitbutton{
+    margin-bottom: 10px;
+    border-style: none;
+    background-color: #4158d0;
+    color: honeydew;
+    font-size: 27px;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 30px;
+    width: 150px;
+    transition: transform 0.3s ease-in;
+}
+
+.box .submitbutton:focus{
+    outline-style: none;
+}
+
+.box .submitbutton:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(157, 172, 236, 0.3);;
+}
+
+

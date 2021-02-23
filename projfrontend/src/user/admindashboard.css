@@ -1,0 +1,26 @@
+#admin-container{
+    display: flex;
+  flex-direction: column;
+  
+}
+
+
+#adminleft{
+    width: 50%;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#adminright{
+    width: 40%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px){
+    #adminleft{
+        width: 100%;
+    }
+    #adminright{
+        width: 100%;
+    }
+}

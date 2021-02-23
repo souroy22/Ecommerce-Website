@@ -1,0 +1,28 @@
+#payment-details-container{
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 0px 8px rgba(255, 253, 253, 0.8);
+}
+
+.eachDetails{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+
+.dotted-line{
+    border: 0.001rem dotted black;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.total-amount-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 10px;
+}

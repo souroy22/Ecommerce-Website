@@ -1,0 +1,53 @@
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+
+body {
+  background: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+/* .footer-section {
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+} */
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  
+}
+
+.inputfile + .label1 {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  padding: 5px;
+}
+
+.inputfile:focus + .label1,
+.inputfile + .label1:hover {
+  background-color: red;
+}
+
+.inputfile + .label1 {
+  cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
