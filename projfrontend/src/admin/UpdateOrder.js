@@ -28,7 +28,6 @@ const UpdateOrder = ({ match }) => {
 
   const preload = (orderId) => {
     getAOrder(orderId, user._id, token).then((data) => {
-      console.log("Success Message ", createdOrder);
       if (data.error) {
         setValues({ ...values, error: data.error });
       } else {
@@ -56,11 +55,9 @@ const UpdateOrder = ({ match }) => {
     setValues({ ...values, error: "", loading: true });
     updateOrderStatus(match.params.orderId, user._id, token, { status }).then(
       (data) => {
-        console.log(data);
         if (data.error) {
           setValues({ ...values, error: data.error });
         } else {
-          console.log("Success Message ", createdOrder);
           setValues({
             ...values,
             status: "",
@@ -74,7 +71,6 @@ const UpdateOrder = ({ match }) => {
   };
 
   const handleChange = (name) => (event) => {
-    console.log(event.target.value);
     const value = event.target.value;
     setValues({ ...values, [name]: value });
   };

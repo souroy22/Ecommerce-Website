@@ -83,7 +83,6 @@ export const countcartprod = (item, condition) => {
         return;
       } 
       if (cart[prodIndex].count) {
-        console.log(cart[prodIndex].count);
         return cart[prodIndex].count;
       }
     }
@@ -110,14 +109,12 @@ export const loadCart = () => {
 
 export const setCart = () => {
   if (!localStorage.getItem("cart")) {
-    console.log("Called here");
     let cart = [];
     localStorage.setItem("cart", JSON.stringify(cart));
   }
 };
 
 export const removeItemFromCart = (productId) => {
-  // console.log("Called");
   let cart = [];
   if (typeof window !== undefined) {
     if (localStorage.getItem("cart")) {

@@ -1,5 +1,5 @@
 import { API } from "../../backend";
-import { Redirect } from "react-router-dom";
+
 
 export const signup = (user) => {
   return fetch(`${API}/signup`, {

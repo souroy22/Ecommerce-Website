@@ -15,7 +15,6 @@ const Base = ({
         {children}
       </div>
     </div>
-    <ReactNotification />
   </div>
 );
 

@@ -144,7 +144,6 @@ export const deleteProduct = (productId, userId, token) => {
     .catch((err) => console.log(err));
 };
 
-
 // ***************   Order Calls  *********************
 
 // Get all the Orders
@@ -205,4 +204,3 @@ export const updateOrderStatus = (orderId, userId, token, status) => {
     })
     .catch((err) => console.log(err));
 };
-
