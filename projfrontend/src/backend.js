@@ -1,1 +1,1 @@
-export const API = "https://apki-apni-dukaan.onrender.com";
+export const API = "https://apki-apni-dukaan.onrender.com/api";
