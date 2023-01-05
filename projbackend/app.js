@@ -19,7 +19,9 @@ const stripeRoutes = require("./routes/stripepayment");
 mongoose
   .connect(process.env.DATABASE, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useFindAndModify: false,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
   })
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log("MongoDb Connection Error ", err));
